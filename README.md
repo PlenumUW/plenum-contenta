@@ -7,7 +7,7 @@ Plenum's back-end is a custom [Contenta CMS](https://www.contentacms.org), an op
 
 ![alt text](https://lh3.googleusercontent.com/Unh778hIS1-eYOlWDLcGFTfuw2rm1fyYxt7PEB1eDa9V1prqwqzvNd62CDJbyq8Kh-WjqHcVwTDFxt0Ko8IiQSqYajHDYaML8fo=w8128-h4976-rw-no "Plenum content management system GUI example")
 
-# How to Contribute
+# Local Install
 ## Requirements
 * Github Account - Sign up for the [student developer pack](https://education.github.com/pack) for freebies
 * Access to Plenum's Dev Team Google Drive - Contact plenum@uw.edu with your uw email to get access
@@ -22,7 +22,7 @@ cd /plenum-contenta
 composer install
 ```
 3. Within MySQL create a new database--name it 'contenta' and choose the 'utf8mb4_unicode_ci' collation.
-4. Create a file titled '.env' and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
+4. Create a file titled '.env' at the root directory of the project and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
 ```
 # Example .env file.
 SITE_MAIL=admin@localhost
@@ -34,7 +34,7 @@ MYSQL_HOSTNAME=localhost
 MYSQL_PORT={{MYSQL_PORT}}
 MYSQL_USER={{MYSQL_USER}}}}
 ```
-5. Create a file titled '.env.local' and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
+5. Create a file titled '.env.local' at the root directory of the project and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
 ```
 # Example .env file.
 MYSQL_PASSWORD='{{MYSQL_PASSWORD}}'
