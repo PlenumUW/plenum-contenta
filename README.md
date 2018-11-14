@@ -10,6 +10,7 @@ Plenum's back-end is a custom [Contenta CMS](https://www.contentacms.org), an op
 # How to Contribute
 ## Requirements
 * Github Account - Sign up for the [student developer pack](https://education.github.com/pack) for freebies
+* Access to Plenum's Dev Team Google Drive - Contact plenum@uw.edu with your uw email to get access
 * A LAMPy software stack - [MAMP](https://www.mamp.info/en/) is a great solution
 * [Composer](https://getcomposer.org/download/) 
 
@@ -50,10 +51,10 @@ drush config-set "system.site" uuid dc6a60d1-2b77-4068-aebb-03aaca963536
    2. Go to _Advanced -> Extend -> Uninstall_
    3. Uninstall 'Recipes Magazin'. This is a sample content module that comes with Contenta CMS.
 9. Import Plenum content
-   1. Download (_Plenum-Backup_)[To be linked]
+   1. Download (_Plenum Backup GZIP_)[https://drive.google.com/open?id=1jwrCoFplMZct4cwFns3X-arbX44uEF84]
    1. In the CMS, navigate to _Configuration -> Development -> Backup & Migrate_
-   2. Import the backup
+   2. Import the downloaded backup
       - Sign back in if you get signed out following a successful import
-   3. Copy the (public files)[To be linked] to the local directory _../plenum-contenta/web/sites/default/files_
+   3. Unzip the (public files)[https://drive.google.com/open?id=12NRFl9aVZPghO-AVGN2w9wTGvL9VIjaU] in your local directory _../plenum-contenta/web/sites/default/files/_
 
 Congratz! You are ready to develop!
