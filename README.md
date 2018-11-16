@@ -12,7 +12,7 @@ Plenum's back-end is a custom [Contenta CMS](https://www.contentacms.org), an op
 * Github Account - Sign up for the [student developer pack](https://education.github.com/pack) for freebies
 * Access to Plenum's Dev Team Google Drive - Contact plenum@uw.edu with your uw email to get access
 * A LAMPy software stack - [MAMP](https://www.mamp.info/en/) is a great solution
-* [Composer](https://getcomposer.org/download/) 
+* Global install of [Composer](https://getcomposer.org/download/) - It is a packae manager, like NPM, but for php. - I suggest using [Homebrew](https://brew.sh)(Mac) or [Chocolatey](https://chocolatey.org)(Windows), these will help manage global installations of common development packages.
 
 ## Getting Setup
 1. [Clone](https://help.github.com/articles/cloning-a-repository/) this repo into the hosted directory of your LAMPy stack (/MAMP/htdocs/)
