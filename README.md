@@ -12,7 +12,8 @@ Plenum's back-end is a custom [Contenta CMS](https://www.contentacms.org), an op
 * Github Account - Sign up for the [student developer pack](https://education.github.com/pack) for freebies
 * Access to Plenum's Dev Team Google Drive - Contact plenum@uw.edu with your uw email to get access
 * A LAMPy software stack - [MAMP](https://www.mamp.info/en/) is a great solution
-* Global install of [Composer](https://getcomposer.org/download/) - It is a packae manager, like NPM, but for php. - I suggest using [Homebrew](https://brew.sh)(Mac) or [Chocolatey](https://chocolatey.org)(Windows), these will help manage global installations of common development packages.
+* Global install of PHP - For easy installation and management, checkout [Homebrew](https://brew.sh)(Mac) or [Chocolatey](https://chocolatey.org)(Windows)
+* Global install of [Composer](https://getcomposer.org/download/) - It is a package manager, like NPM, but for php. Use Chocolatey or Homebrew for easiest installation.
 
 ## Getting Setup
 1. [Clone](https://help.github.com/articles/cloning-a-repository/) this repo into the hosted directory of your LAMPy stack (/MAMP/htdocs/)
@@ -21,8 +22,8 @@ Plenum's back-end is a custom [Contenta CMS](https://www.contentacms.org), an op
 cd /plenum-contenta
 composer install
 ```
-3. Within MySQL create a new database--name it 'contenta' and choose the 'utf8mb4_unicode_ci' collation.
-4. Create a file titled '.env' at the root directory of the project and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
+3. Within [MySQL create a new database](localhost:8888/phpMyAdmin/)--name it 'contenta' and choose the 'utf8mb4_unicode_ci' collation.
+4. Create a file titled **.env** at the root directory of the project and input the following and replace '{{VARIABLES}}' with relevant information. If you're using MAMP, this replacement information can be found at the ['WebStart' page](http://localhost:8888/MAMP/).
 ```
 # Example .env file.
 SITE_MAIL=admin@localhost
@@ -34,7 +35,7 @@ MYSQL_HOSTNAME=localhost
 MYSQL_PORT={{MYSQL_PORT}}
 MYSQL_USER={{MYSQL_USER}}}}
 ```
-5. Create a file titled '.env.local' at the root directory of the project and input the following and replace {{variables}} with relevant information. If you're using MAMP, this info can be found at the 'WebStart' page.
+5. Create a file titled '.env.local' at the root directory of the project and input the following and replace {{VARIABLES}} with relevant information. If you're using MAMP, this info can be found at the ['WebStart' page](http://localhost:8888/MAMP/).
 ```
 # Example .env file.
 MYSQL_PASSWORD='{{MYSQL_PASSWORD}}'
